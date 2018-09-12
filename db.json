@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "correo": "juan@gmail.com",
+      "telefono": "4512-7845"
+    },
+    {
+      "id": 2,
+      "nombre": "Nombre 1",
+      "correo": "correo1@gmail.com",
+      "telefono": "1"
+    },
+    {
+      "id": 3,
+      "nombre": "Nombre 2",
+      "correo": "correo2@gmail.com",
+      "telefono": "2"
+    },
+    {
+      "id": 4,
+      "nombre": "Nombre 3",
+      "correo": "correo3@gmail.com",
+      "telefono": "3"
+    },
+    {
+      "id": 5,
+      "nombre": "Nombre 4",
+      "correo": "correo4@gmail.com",
+      "telefono": "4"
+    },
+    {
+      "id": 6,
+      "nombre": "Nombre 5",
+      "correo": "correo5@gmail.com",
+      "telefono": "5"
+    },
+    {
+      "id": 7,
+      "nombre": "Nombre 6",
+      "correo": "correo6@gmail.com",
+      "telefono": "6"
+    }
+  ]
+}
