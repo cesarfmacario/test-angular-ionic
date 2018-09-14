@@ -1,0 +1,45 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+</ion-content> -->
+
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Usuarios
+        </ion-title>
+        <ion-buttons slot="end">
+            <ion-button routerLink="/new">
+                <ion-icon name="add-circle"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item-sliding *ngFor="let usuario of usuarios">
+            <ion-item detail lines="full">
+                <!-- routerLink="/detail/{{usuario.id}}" -->
+                <ion-icon name="person" slot="start"></ion-icon>
+                {{ usuario.nombre }}
+            </ion-item>
+            <ion-item-options side="end">
+                <ion-item-option color="warning" (click)="editarUsuario(usuario.id)">
+                    <ion-icon name="create" slot="start"></ion-icon>
+                </ion-item-option>
+                <ion-item-option color="danger" (click)="eliminarUsuario(usuario.id)">
+                    <ion-icon name="trash" slot="start"></ion-icon>
+                </ion-item-option>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+</ion-content>

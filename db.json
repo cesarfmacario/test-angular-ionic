@@ -2,15 +2,21 @@
   "users": [
     {
       "nombre": "Juan Pérez",
-      "correo": "juanperez@hotmail.com",
+      "correo": "juanperez1987@hotmail.com",
       "telefono": "4578-1245",
       "id": 1
     },
     {
-      "nombre": "Mario Morales",
+      "nombre": "Mario Morales Pérez",
       "correo": "mariomorales@gmail.com",
-      "telefono": "3045-9817",
+      "telefono": "4578-8956",
       "id": 2
+    },
+    {
+      "nombre": "Pedro Pérez",
+      "correo": "pedro@mail.com",
+      "telefono": "4512-9865",
+      "id": 3
     }
   ]
 }
