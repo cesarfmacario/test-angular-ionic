@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <br>
+    <h2>
+        Usuarios
+    </h2>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+            <button type="button" class="btn btn-primary btn-block" [routerLink]="['/users/new']">
+                <span class="fas fa-plus-circle"></span>
+                <strong>&nbsp;&nbsp;Agregar nuevo</strong>
+            </button>
+            <br>
+        </div>
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let usuario of usuarios;">
+                        <td>{{ usuario.nombre }}</td>
+                        <td>{{ usuario.correo }}</td>
+                        <td>{{ usuario.telefono }}</td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-warning" [routerLink]="['/users/edit/' + usuario.id]">
+                                    <span class="fas fa-pencil-alt"></span>
+                                </button>
+                                <button type="button" class="btn btn-danger" (click)="eliminarUsuario(usuario)">
+                                    <span class="fas fa-trash-alt"></span>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="container">
+    <br>
+    <h2>
+        Información del usuario
+    </h2>
+    <form novalidate="" (submit)="submitForm()" [formGroup]="usuarioForm" *ngIf="usuarioForm">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label>Nombre: *</label>
+                    <input class="form-control" formControlName="nombre" type="text" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label>Correo: *</label>
+                    <input class="form-control" formControlName="correo" type="text" placeholder="Correo">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label>Teléfono: *</label>
+                    <input class="form-control" formControlName="telefono" type="text" placeholder="Teléfono">
+                </div>
+            </div>
+            <div class="col-12" *ngIf="showError">
+                <div class="alert alert-danger" role="alert">
+                    Todos los campos son obligatorios.
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 offset-md-4 col-lg-4 offset-lg-4">
+                <button type="submit" class="btn btn-success btn-block">
+                    <span class="fas fa-check"></span>
+                    <strong>&nbsp;&nbsp;Guardar</strong>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

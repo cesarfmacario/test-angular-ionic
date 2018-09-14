@@ -6,6 +6,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { UsersListComponent } from 'src/app/users/list/users-list.component';
 import { ApiService } from 'src/app/services/api.service';
 import { UsersFormComponent } from 'src/app/users/form/users-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { UsersFormComponent } from 'src/app/users/form/users-form.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     ApiService
